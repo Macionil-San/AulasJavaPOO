@@ -21,6 +21,9 @@ public class Pessoa {
         this.nome = nome;
     }
 
+    public Pessoa(String dado, float v, int i) {
+    }
+
     public void falar(String frase) {
         System.out.println(nome + "falou: " + frase);
     }
