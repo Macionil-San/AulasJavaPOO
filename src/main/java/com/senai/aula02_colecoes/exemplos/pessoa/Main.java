@@ -1,12 +1,14 @@
 package com.senai.aula02_colecoes.exemplos.pessoa;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
         Pessoa pessoa1 = new Pessoa("Marcus", 17);
-        Pessoa pessoa2 = new Pessoa("Yoshi", 5);
-        Pessoa pessoa3 = new Pessoa("Gabriel", 18);
+        Pessoa pessoa2 = new Pessoa("Ruan", 17);
+        Pessoa pessoa3 = new Pessoa("Gabriela", 18);
 
         Pessoa[] matrizPessoas = new Pessoa[4];
 
@@ -50,10 +52,27 @@ public class Main {
 
         listaPessoas.add(0, pessoa3);
         listar(listaPessoas);
+
+
+        System.out.println("lista normal(_________COMEÇO_________)");
+        listaPessoas.forEach(System.out::println);   //com esse linha fez o a função do listar
+        System.out.println("__________lista normal (FIM)____________");
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> p.nome.toLowerCase().contains("LA")).toList();  //ta filtrando pra ver qual da lista tem "la"
+                                                                                                        //ta fazendo uma comparação, no caso o >=10
+                                                                                                     // se for verdadeiro vai retornar uma lista com pessoas cm idade >=10
+
+
+
+        System.out.println("____________lista filtrada(COMEÇO)_____________");
+        listaFiltrada.forEach(System.out::println );
+        System.out.println("_________lista filtrada(FIM)__________");
+
+
+
     }
 
     public static void listar(ArrayList<Pessoa> lista){
-        System.out.println("");
+        System.out.println("___lista(for each)____");
         for (Pessoa pessoa:lista){
             System.out.println(pessoa);
         }
