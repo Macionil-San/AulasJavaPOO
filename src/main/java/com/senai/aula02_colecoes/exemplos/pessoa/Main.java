@@ -2,6 +2,7 @@ package com.senai.aula02_colecoes.exemplos.pessoa;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -68,7 +69,15 @@ public class Main {
         System.out.println("_________lista filtrada(FIM)__________");
 
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("preencha as informações a seguir: ");
+        System.out.println("nome");
+        String nome = scanner.nextLine();
+        System.out.println("idade");
+        int idade = scanner.nextInt();
+        listaPessoas.add(new Pessoa(nome,idade));
 
+        listaPessoas.forEach(System.out::println);
     }
 
     public static void listar(ArrayList<Pessoa> lista){
