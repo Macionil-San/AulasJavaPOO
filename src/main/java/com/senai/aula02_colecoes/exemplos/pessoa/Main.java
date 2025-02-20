@@ -58,12 +58,11 @@ public class Main {
         System.out.println("lista normal(_________COMEÇO_________)");
         listaPessoas.forEach(System.out::println);   //com esse linha fez o a função do listar
         System.out.println("__________lista normal (FIM)____________");
-        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> p.nome.toLowerCase().contains("LA")).toList();  //ta filtrando pra ver qual da lista tem "la"
-                                                                                                        //ta fazendo uma comparação, no caso o >=10
-                                                                                                     // se for verdadeiro vai retornar uma lista com pessoas cm idade >=10
 
 
-
+        List<Pessoa> listaFiltrada = listaPessoas.stream().filter(p -> p.nome.toLowerCase().contains("LA")).toList();     //ta filtrando pra ver qual da lista tem "la"
+                                                                                                                         //ta fazendo uma comparação, no caso o >=10
+                                                                                                                        // se for verdadeiro vai retornar uma lista com pessoas cm idade >=10
         System.out.println("____________lista filtrada(COMEÇO)_____________");
         listaFiltrada.forEach(System.out::println );
         System.out.println("_________lista filtrada(FIM)__________");
