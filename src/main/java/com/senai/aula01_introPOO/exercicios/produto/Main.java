@@ -1,4 +1,4 @@
-package com.senai.Aula01_introPOO.exercicios.produto;
+package com.senai.aula01_introPOO.exercicios.produto;
 
 import java.util.ArrayList;
 import java.util.Scanner;                                             //usei o nosso desafio 3 como base mas usando os objetos e vendo como podia fazer uma lista

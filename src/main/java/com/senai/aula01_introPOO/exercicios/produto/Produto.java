@@ -1,4 +1,4 @@
-package com.senai.Aula01_introPOO.exercicios.produto;
+package com.senai.aula01_introPOO.exercicios.produto;
 
 public class Produto {
     String nome;

@@ -1,4 +1,4 @@
-package com.senai.Aula01_introPOO.Exemplos.pessoa.concecionarria;
+package com.senai.aula01_introPOO.Exemplos.pessoa.concecionarria;
 
 public class Main {
     public static void main(String[] args) {
