@@ -22,7 +22,7 @@ public class ContaBancario {
     }
 
     public void setTitular(String titular) {
-        this.titular = titular;
+        this.titular = titular;                         //setter
     }                                                     //setter
 
     public double getSaldo() {
