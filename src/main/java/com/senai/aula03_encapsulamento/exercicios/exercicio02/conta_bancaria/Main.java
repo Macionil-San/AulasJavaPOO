@@ -15,7 +15,7 @@ public class Main {
 
         System.out.println("SACAR: ");
         conta01.sacar();
-        System.out.println("____________CONTA ATUALIZADA__________ \n" + conta01);
+        System.out.println("____________CONTA ATUALIZADA_______-___ \n" + conta01);
 
     }
 
