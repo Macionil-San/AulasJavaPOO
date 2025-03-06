@@ -1,4 +1,4 @@
-package com.senai.aula03_encapsulamento.exemplos.carro;
+package com.senai.aula03_encapsulamento.exemplos.exemplo01.carro;
 
 public class Carro {
     private int velocidade;

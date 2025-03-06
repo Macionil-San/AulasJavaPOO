@@ -1,4 +1,4 @@
-package com.senai.aula03_encapsulamento.exercicios.exercicio02;
+package com.senai.aula03_encapsulamento.exercicios.exercicio02.conta_bancaria;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class ContaBancario {
         this.titular = titular;
         if (saldo >= 0) {
             this.saldo = saldo;
-        }else {
+        } else {
             throw new IllegalArgumentException("não pode isso não, ta errado esse saldo");
         }
 
@@ -29,7 +29,7 @@ public class ContaBancario {
         return saldo;
     }
 
-    public void setSaldo(double saldo){
+    public void setSaldo(double saldo) {
         this.saldo = saldo;
 
     }
@@ -42,15 +42,35 @@ public class ContaBancario {
                 "" + '}';
     }
 
-    public void depositar(){
+    public void depositar() {
+        double valor;
         Scanner scanner = new Scanner(System.in);
-
         System.out.println("digite quanto deseja depositar: ");
-        saldo += scanner.nextInt();
-        System.out.println("depositado com sucesso!!!");
+        valor = scanner.nextDouble();
+        if (valor > 0) {
+            saldo += valor;
+            System.out.println("depositado com sucesso!!!");
+        } else {
+            System.out.println("--------------INVALIDO-----------");
+        }
 
     }
 
+    public void sacar() {
+        double valor;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("digite quanto deseja sacar: ");
+        valor = scanner.nextDouble();
+        if (valor > 0 && valor < saldo) {
 
+            saldo -= valor;
+            System.out.println("sacado com sucesso!!!");
+        } else if ( saldo < valor){
+            System.out.println("--------------SE NÃO TEM DIM DIM-----------");
+            saldo = saldo;
+        } else {
+            System.out.println("--------------INVALIDO-----------");
+        }
 
+    }
 }

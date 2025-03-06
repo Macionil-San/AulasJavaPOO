@@ -1,4 +1,4 @@
-package com.senai.aula03_encapsulamento.exercicios.exercicio01;
+package com.senai.aula03_encapsulamento.exercicios.exercicio01.cadastro;
 
 public class Produto {
     private String nome;
@@ -15,7 +15,7 @@ public class Produto {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }                                                     //setter
+    }                        //setter
 
     public double getPreco() {
         return preco;

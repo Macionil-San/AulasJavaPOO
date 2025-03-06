@@ -1,4 +1,4 @@
-package com.senai.aula03_encapsulamento.exercicios.exercicio01;
+package com.senai.aula03_encapsulamento.exercicios.exercicio01.cadastro;
 
 public class Main {
     public static void main(String[] args) {
