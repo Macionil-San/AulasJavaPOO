@@ -34,7 +34,11 @@ public class Funcionario {
     }
 
     public void setNome(String nome) {
-        this.nome = nome;
+        if (nome.isBlank()){
+            System.out.println("Nome invalido!!");
+        }else{
+            this.nome = nome;
+        }
     }
 
     public double setSalario(double salario) {
@@ -62,8 +66,14 @@ public class Funcionario {
         return cargo;
     }
 
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
+    public void setCargo(int idCargo) {
+       if (idCargo >= 1 && idCargo <= listaDeCargos.length){
+           this.cargo = listaDeCargos[idCargo - 1];
+            System.out.println("Numero invalido");
+        }else {
+           System.out.println("Numero invalido");
+
+        }
     }
 
 
