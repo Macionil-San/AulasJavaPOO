@@ -55,7 +55,7 @@ public class Funcionario {
 
     public void aumentarSalario(int pporcentagem){
         if (pporcentagem<=0){
-            System.out.println("Numero invalido");
+            System.out.println("Numero invalido!");
         }else {
             this.salario += (salario*pporcentagem) / 100;
         }
