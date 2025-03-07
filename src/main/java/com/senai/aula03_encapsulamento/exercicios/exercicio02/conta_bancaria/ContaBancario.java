@@ -42,8 +42,7 @@ public class ContaBancario {
                 "" + '}';
     }
 
-    public void depositar() {
-        double valor;
+    public void depositar(double valor) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("digite quanto deseja depositar: ");
         valor = scanner.nextDouble();
@@ -56,8 +55,7 @@ public class ContaBancario {
 
     }
 
-    public void sacar() {
-        double valor;
+    public void sacar(double valor) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("digite quanto deseja sacar: ");
         valor = scanner.nextDouble();
@@ -65,12 +63,21 @@ public class ContaBancario {
 
             saldo -= valor;
             System.out.println("sacado com sucesso!!!");
-        } else if ( saldo < valor){
+        } else if (saldo < valor) {
             System.out.println("--------------SE NÃO TEM DIM DIM-----------");
             saldo = saldo;
         } else {
             System.out.println("--------------INVALIDO-----------");
         }
 
+    }
+
+    public void transferir(double valor, ContaBancario contaDestino) {
+        if (valor > saldo) {
+            System.out.println("--------------SE NÃO TEM DIM DIM-----------");
+        }else{
+            this.sacar(valor);
+
+        }
     }
 }
