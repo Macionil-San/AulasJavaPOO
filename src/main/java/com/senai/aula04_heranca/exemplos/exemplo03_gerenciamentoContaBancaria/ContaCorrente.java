@@ -1,4 +1,4 @@
-package com.senai.aula04_heranca.exemplos.gerenciamentoContaBancaria;
+package com.senai.aula04_heranca.exemplos.exemplo03_gerenciamentoContaBancaria;
 
 import java.util.Scanner;
 

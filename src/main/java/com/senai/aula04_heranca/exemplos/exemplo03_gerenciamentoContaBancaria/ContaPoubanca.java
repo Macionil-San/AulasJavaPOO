@@ -1,4 +1,4 @@
-package com.senai.aula04_heranca.exemplos.gerenciamentoContaBancaria;
+package com.senai.aula04_heranca.exemplos.exemplo03_gerenciamentoContaBancaria;
 
 public class ContaPoubanca extends ContaBancaria{
 private double taxaDeRendimento;
@@ -11,5 +11,5 @@ private double taxaDeRendimento;
 
     public void aplicarRendimento(){
         saldo +=(saldo*taxaDeRendimento)/100;
-    }
+    };
 }

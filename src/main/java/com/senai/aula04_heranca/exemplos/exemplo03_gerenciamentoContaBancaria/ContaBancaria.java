@@ -1,4 +1,4 @@
-package com.senai.aula04_heranca.exemplos.gerenciamentoContaBancaria;
+package com.senai.aula04_heranca.exemplos.exemplo03_gerenciamentoContaBancaria;
 
 import java.util.Scanner;
 
@@ -36,7 +36,7 @@ public class ContaBancaria {
     }
 
     public void exibirSaldo(){
-        System.out.println("Titilar: %s , Saldo: R$.2f \n");
+        System.out.println("Titilar: %s , Saldo: R$.2f \n" );
     }
 
     public String getTitular() {
