@@ -32,7 +32,7 @@ public class ContaCorrente extends ContaBancaria {
             System.out.println("--------------SE NÃO TEM DIM DIM-----------");
             saldo = saldo;
         } else {
-            System.out.println("--------------INVALIDO-----------");
+            System.out.println("-------------------INVALIDO----------------");
         }
 
     }
