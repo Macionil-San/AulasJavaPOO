@@ -5,4 +5,7 @@ public class Pato extends Animal{
     void fazerSom() {
         System.out.println("O  pato late: quack quack");
     }
+    void voar() {
+        System.out.println("to voando quack quack");
+    }
 }
