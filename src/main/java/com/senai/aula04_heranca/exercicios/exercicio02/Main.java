@@ -19,15 +19,9 @@ public class Main {
         );
         System.out.println(funcionario2);
 
-
-        System.out.println("----------COO--------");
-        Coordenador funcionario3 = new Coordenador(
-                "Bianca", 12000,
-                2, "juju"
-
-        );
     }
 }
+
 
 
 
