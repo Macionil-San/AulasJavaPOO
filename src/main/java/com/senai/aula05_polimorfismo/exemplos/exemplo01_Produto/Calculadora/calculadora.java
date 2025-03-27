@@ -1,4 +1,4 @@
-package com.senai.aula05_polimorfismo.Exemplos.exemplo01.Calculadora;
+package com.senai.aula05_polimorfismo.exemplos.exemplo01_Produto.Calculadora;
 
 public class calculadora {
     int somar(int a, int b) {

@@ -1,4 +1,4 @@
-package com.senai.aula05_polimorfismo.Exemplos.Exemplo03;
+package com.senai.aula05_polimorfismo.exemplos.Exemplo02_Animal;
 
 public class Pato extends Animal{
     @Override
