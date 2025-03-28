@@ -1,26 +1,26 @@
 package com.senai.aula05_polimorfismo.exercicios.exercicio02;
 
 public class Reserva {
-    private String nomeCliente;
+    private String cliente;
     private double diaria;
     private double alimentacao;
-    private int qtdDias;
+    private int diasFicados;
     private double valorTotal;
 
     public Reserva(String nomeCliente, double diaria, double alimentacao, int qtdDias, double valorTotal) {
-        this.nomeCliente = nomeCliente;
+        this.cliente = nomeCliente;
         this.diaria = diaria;
         this.alimentacao = alimentacao;
-        this.qtdDias = qtdDias;
+        this.diasFicados = qtdDias;
         this.valorTotal = valorTotal;
     }
 
-    public String getNomeCliente() {
-        return nomeCliente;
+    public String getCliente() {
+        return cliente;
     }
 
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
     }
 
     public double getDiaria() {
@@ -39,23 +39,24 @@ public class Reserva {
         this.alimentacao = alimentacao;
     }
 
-    public int getQtdDias() {
-        return qtdDias;
+    public int getDiasFicados() {
+        return diasFicados;
     }
 
-    public void setQtdDias(int qtdDias) {
-        this.qtdDias = qtdDias;
+    public void setDiasFicados(int diasFicados) {
+        this.diasFicados = diasFicados;
     }
 
     public double getValorTotal() {
         return valorTotal;
     }
 
+
     public void setValorTotal(double valorTotal) {
         this.valorTotal = valorTotal;
     }
 
     public double calcularReserva() {
-        return qtdDias*diaria;
+        return diasFicados *diaria;
     }
 }

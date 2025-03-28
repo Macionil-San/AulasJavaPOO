@@ -1,17 +1,22 @@
 package com.senai.aula05_polimorfismo.exercicios.exercicio04;
 
 public class Sensor {
-    private double medida;
+    private double medicao;
 
-    public Sensor(double medida) {
-        this.medida = medida;
+    public Sensor(double medicao) {
+        this.medicao = medicao;
     }
 
-    public double getMedida() {
-        return medida;
+    public double getMedicao() {
+        return medicao;
     }
 
-    public void setMedida(double medida) {
-        this.medida = medida;
+    public void setMedicao(double medicao) {
+        this.medicao = medicao;
+    }
+
+
+    public void exibirMedicao() {
+        System.out.println("Medição genérica: " + medicao);
     }
 }

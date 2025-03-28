@@ -5,7 +5,7 @@ public class Main {
         Reserva reserva = new ReservaSimples("juju", 300, 50, 3, 0, 100);
         Reserva reserva1 = new ReservaVip("ruru", 2000, 200, 2, 0, 200);
 
-        System.out.println("reserva simples:r$ " + reserva.calcularReserva());
-        System.out.println("reserva VIP: r$ " + reserva1.calcularReserva());
+        System.out.println("simples:r$ " + reserva.calcularReserva());
+        System.out.println(" VIP: r$ " + reserva1.calcularReserva());
     }
 }
