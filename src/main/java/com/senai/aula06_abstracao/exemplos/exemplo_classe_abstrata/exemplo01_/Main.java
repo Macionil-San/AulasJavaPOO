@@ -4,11 +4,13 @@ public class Main {
     public static void main(String[] args) {
         testarAnimal(new Pato("jubriscreudu"));
     }
-    private static void testarAnimal(Animal animal){
+
+    private static void testarAnimal(Animal animal) {
         animal.dormir();
         animal.fazerSom();
-        Pato pato = (Pato) animal;
-        pato.botarOvo();
+        if (animal instanceof Pato pato) {
+            pato.botarOvo();
+        }
     }
 
 
