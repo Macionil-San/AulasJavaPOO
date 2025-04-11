@@ -2,7 +2,7 @@ package com.senai.aula06_abstracao.exercicios.exercicio01;
 
 public interface CheFky {
     double PESO_MAXIMO_BAGAGEM = 23;
-    double QTD_MAXIMA_BAGAGENS = 5;
+    double QUANTI_MAXIMA_BAGAGENS = 5;
 
     void validarDocumento();
     void emitirCartaoEmbarque();
@@ -25,7 +25,7 @@ public interface CheFky {
     }
 
     default void validarQtdBagagem(int qtdBagagem){
-        if (qtdBagagem > QTD_MAXIMA_BAGAGENS) {
+        if (qtdBagagem > QUANTI_MAXIMA_BAGAGENS) {
             System.out.println("Quantidade de bagagens não permitida (excedeu o limite)!");
         } else {
             System.out.println("Quantidade de bagagens autorizada!");
