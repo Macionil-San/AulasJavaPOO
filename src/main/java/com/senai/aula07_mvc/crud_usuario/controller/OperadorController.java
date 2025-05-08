@@ -13,7 +13,7 @@ public class OperadorController {
     }
 
     public boolean cadastrarOperador(Operador operador) {
-        if (operador ! = null){
+        if (operador != null){
             operadorDAO.salvar(operador);
             return true;
         }
