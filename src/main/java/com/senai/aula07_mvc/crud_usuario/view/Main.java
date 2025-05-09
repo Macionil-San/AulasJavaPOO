@@ -6,7 +6,7 @@ import com.senai.aula07_mvc.crud_usuario.model.Operador;
 import com.senai.aula07_mvc.crud_usuario.model.Supervisor;
 
 import java.util.Scanner;
-Vai olhar o seus repositórios no github
+
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
