@@ -7,7 +7,7 @@ public class Main {
         Produto produto01 = new Produto("Notebook", 2500.00);
         produto01.exibirProduto();
 
-        produto01.setPreco(-500.00); // Isso deve exibir uma mensagem de erro
+        produto01.setPreco(-500.00); // exibi uma mensagem de erro
         produto01.exibirProduto();
     }
 }

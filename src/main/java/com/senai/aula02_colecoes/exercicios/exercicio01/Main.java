@@ -31,13 +31,13 @@ public class Main {
 
             switch (opcao) {
                 case 1:
-                    adicinaaTarefa(scanner, tarefas);
+                    adicionarTarefa(scanner, tarefas);
                     break;
                 case 2:
                     exibirTarefas(tarefas);
                     break;
                 case 3:
-                    marcarConcuido(scanner, tarefas);
+                    marcarConcluido(scanner, tarefas);
                     break;
                 case 4:
                     deleteTarefa(scanner, tarefas);
@@ -52,7 +52,7 @@ public class Main {
     }
 
 
-    public static void adicinaaTarefa(Scanner scanner, ArrayList<Tarefas> tarefas) {
+    public static void adicionarTarefa(Scanner scanner, ArrayList<Tarefas> tarefas) {
         System.out.println("nome do tarefa:");
         String nome = scanner.nextLine();
         System.out.println("status:");
@@ -72,7 +72,7 @@ public class Main {
         }
     }
 
-    public static void marcarConcuido(Scanner scanner, ArrayList<Tarefas> tarefas) {
+    public static void marcarConcluido(Scanner scanner, ArrayList<Tarefas> tarefas) {
         System.out.println("nome da tarefa pra alterar:");
         String nome = scanner.nextLine();
 
@@ -100,7 +100,7 @@ public class Main {
         }
     }
 
-    public static void deleteTarefa(Scanner scanner, ArrayList<Tarefas> tarefas) {
+    public static void deleteTarefa(Scanner scanner, ArrayList<Tarefas>   arefas) {
         System.out.println("tarefa a remover: ");
         String nome = scanner.nextLine();
         

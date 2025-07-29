@@ -1,6 +1,6 @@
 package com.senai.aula02_colecoes.exercicios.exercicio01;
 
-import java.util.ArrayList;
+
 
 public class Tarefas {
 
